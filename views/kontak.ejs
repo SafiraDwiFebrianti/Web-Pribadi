@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/libs/font-awesome/5.9.0/css/all.min.css">
+  </head>
+  <body>
+    <body class="bg-gray-400">
+      <div class="w-full text-gray-700 bg-gray-100 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">My Personal Website</a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"></button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="/home">Kembali ke Dashboard</a>
+      </div>
+      </div>
+
+      <!-- component -->
+      <div id="container" class="w-4/5 mx-auto mt-8">
+        <!-- <div class="title text-center text-blue-900 p-6 text-3xl md:text-5xl uppercase text-bold">My Contact</div> -->
+        <p class="font-sans text-lg text-black text-center text-3xl md:text-5xl text-bold uppercase mb-10">
+          My Contact
+        </p>
+          <div class="flex flex-col sm:flex-row">
+            <!-- Card 1 -->
+            <div class="sm:w-1/4 p-2">
+              <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+                <div class="mb-3">
+                  <img class="w-auto mx-auto h-32 w-32 p-4" src="instagram.png"alt=""/>
+                </div>
+                <h2 class="text-xl font-medium text-gray-700">Instagram</h2>
+                <span class="text-blue-500 block mb-5">@safiraadf</span>
+                <a href="https://www.instagram.com/safiraadf/" class="px-4 py-2 bg-red-500 text-white rounded-full">Kunjungi</a>
+              </div>
+            </div>
+
+      <!-- Card 2 -->
+      <div class="sm:w-1/4 p-2">
+        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+          <div class="mb-3">
+            <img class="w-auto mx-auto h-32 w-32 p-4" src="fb.png"alt=""/>
+          </div>
+          <h2 class="text-xl font-medium text-gray-700">Facebook</h2>
+          <span class="text-blue-500 block mb-5">Safira Dwi</span>
+          <a href="https://www.facebook.com/safira.dwifebrianti.39/" class="px-4 py-2 bg-red-500 text-white rounded-full">Kunjungi</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="sm:w-1/4 p-2">
+        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+          <div class="mb-3">
+            <img class="w-auto mx-auto h-32 w-32 p-4" src="email.png"alt=""/>
+          </div>
+          <h2 class="text-xl font-medium text-gray-700">Email</h2>
+          <span class="text-blue-500 block mb-5">Safiradwifebrianti02@gmail.com</span>
+          <a href="#" class="px-4 py-2  rounded-full"></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="sm:w-1/4 p-2">
+        <div class="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
+          <div class="mb-3">
+            <img class="w-auto mx-auto h-32 w-32 p-4" src="github.png"alt=""/>
+          </div>
+          <h2 class="text-xl font-medium text-gray-700">Github</h2>
+          <span class="text-blue-500 block mb-5">SafiraDwiFebrianti</span>
+          <a href="https://github.com/SafiraDwiFebrianti/" class="px-4 py-2 bg-red-500 text-white rounded-full">Kunjungi</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </body>
+  </body>
+</html>

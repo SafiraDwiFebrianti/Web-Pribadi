@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/libs/font-awesome/5.9.0/css/all.min.css">
+  </head>
+  <style>
+  .bg-dots{
+    background-image: url(https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5dea7a12bb83ab1f13040de5_cx-dots.svg);
+    background-repeat: no-repeat
+  }
+</style>
+  <body>
+    <body class="bg-gray-400">
+      <div class="w-full text-gray-700 bg-gray-100 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">My Personal Website</a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          href="/home">Kembali ke Dashboard</a>
+      </div>
+      </div>
+
+
+
+      <div class="title text-center text-black p-6 text-3xl md:text-5xl uppercase text-bold">About Me</div>
+      <div class="flex justify-center flex-wrap">
+        <div class="flex flex-col items-center p-8 bg-white shadow-lg rounded mx-8 mb-8 flex-1 mb-8 md:mb-0  md:w-1/3 sm:flex-initial">
+          <p class=" text-justify px-8 mb-8">
+            Namaku Safira Dwi Febrianti. Anda dapat memanggil saya dengan Safira. Saya merupakan siswa kelas XII dari SMK Telkom Malang. Saya mengambil kejuruan di bidang Rekayasa Perangkat Lunak.
+          </p>
+          <p class=" text-justify px-8 mb-8">
+            Saya berasal dari Tulungagung, Jawa Timur. Hobiku adalah bernyanyi dan mendengarkan musik tentu saja. Aku merupakan anak kedua dari dua bersaudara.
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-between mx-8 md:mx-0 md:w-1/4 ">
+          <div class="flex flex-col bg-white rounded p-4 items-center shadow-lg border-r-8 border-red-400 mb-4 md:mb-auto">
+            <img src="fira.jpeg" class="rounded-t h-604 w-42"/>
+            </div>
+          </div>
+        </div>
+
+
+
+    </body>
+  </body>
+</html>
